@@ -1,0 +1,474 @@
+#results 
+	padding-left 1.2em
+	padding-right 1.2em
+	
+	@media (min-width 1025px)
+		padding-left 0
+		padding-right 0
+	
+		
+	/* Styles for making the grid have two columns from 640 to 959px */
+	.medium-4
+		@media (min-width:640px) and (max-width: 959px)
+			width 50% !important
+
+	.medium-8
+		@media (min-width:640px) and (max-width: 959px)
+			width 100% !important
+
+	.medium-4.no-padding
+		@media (min-width:640px) and (max-width: 959px)
+			width 100% !important
+			
+		.medium-12 
+			@media (min-width:640px) and (max-width: 959px)
+				width 50% !important
+	
+	.medium-block-grid-3 > li
+		@media  (min-width:640px) and (max-width: 959px)
+			width 50% !important
+			
+	.medium-block-grid-3 > li:nth-of-type(2n+1) 
+		@media (min-width:640px) and (max-width: 959px)
+			clear both
+	
+	.medium-block-grid-3 > li:nth-of-type(3n+1)
+		@media (min-width:640px) and (max-width: 959px)
+			clear none
+		
+	.featured .book 
+		background-color: inherit
+			
+	ul 
+		margin 0 -20px
+		position relative
+		min-height 1px
+		
+		@media (min-width: 1025px)
+			margin 0
+				
+				
+	.book
+		background-color: #F4F4F4
+		width 100%
+		height 100%
+		display block
+		position relative
+		line-height 1.5em
+		//float left
+		margin 0	
+
+	ul li,
+	.columns
+		text-align center
+		padding 1.6rem 0.8rem 0
+		font-family "Gotham Light"
+		height 294px
+		
+		@media (max-width 639px)
+			height 360px
+			&.no-padding
+				height auto
+			
+		@media (min-width 641px)
+			height 340px
+
+		@media (min-width 768px)
+			height 384px
+			
+		@media (min-width 960px)
+			height 320px
+			&.no-padding
+				height 640px
+
+		@media (min-width 1024px)
+			height 342px
+		
+		@media (min-width 1025px)
+			height 340px
+			padding 1.8rem 0.6rem 0
+			
+			&:nth-of-type(3n+1),
+			&.no-padding-left
+				padding-left 0px
+				padding-right 1.2rem
+			&:nth-of-type(3n+3),
+			&.no-padding-right
+				padding-right 0px
+				padding-left 1.2rem
+			&.medium-8 /* the parent of featured box */
+				padding-right 0.6rem
+			&.no-padding .columns
+				padding-left 1.2rem !important
+				padding-right 0px !important
+
+		@media (min-width 1280px)
+			height 383px
+
+		&.medium-8,
+		.featured
+			height 575px
+			overflow hidden
+				
+			@media (min-width 768px)
+				height 587px
+				
+			@media (min-width 960px)
+				height 640px
+
+			@media (min-width 1024px)
+				height 690px
+			
+			@media (min-width 1025px)
+				height 680px
+				
+			@media (min-width 1280px)
+				height 765px
+
+		a 
+			display inline-block
+			vertical-align middle
+			position relative
+			
+			.prettyCovers
+				top 40px
+			
+			// &.book:after
+			// 	content 'Click to buy'
+			// 	font-family 'Gotham Book'
+			// 	font-weigth bold
+			// 	line-height 38px
+			// 	background-color: rgba(0,0,0,0.8)
+			// 	border-radius 4px
+			// 	color #FFF
+			// 	width 118px
+			// 	height 38px
+			// 	position absolute
+			// 	margin auto
+			// 	top 122px
+			// 	left 0
+			// 	right 0
+			// 	font-size 0.7rem
+			// 	text-transform none
+			// 	display none
+				
+			// 	@media (min-width 1280px)
+			// 		top 150px
+			
+			// &.book:hover
+				
+			// 	&:after
+			// 		display block
+				
+			
+		
+			img
+				display block
+				height 175px
+				width auto
+				margin 0
+				visibility hidden
+		
+				@media (max-width 639px)
+					height 265px
+				@media (min-width:641px) and (max-width 767px)
+					height 245px
+				@media (min-width: 768px)
+					height 295px
+				@media (min-width:769px) and (max-width: 959px)
+					height 285px
+				@media (min-width:960px) and (max-width: 1023px)
+					height 213px
+				@media (min-width:1024px) and (max-width: 1279px)
+					height 235px
+				@media (min-width: 1280px)
+					height 270px
+				
+		.featured
+			color #FFF;
+			text-transform uppercase
+			font-size 1.5em
+			width 100%
+			padding 0.71em 1.215em
+			position relative
+			
+			img
+				margin 0 auto
+				display block
+				height 395px
+				width auto
+				left 0
+				right 0
+				
+				@media (min-width: 960px)
+					height 472px
+				@media (min-width: 1024px)
+					height 469px
+				@media (min-width: 1280px)
+					height 548px
+			
+			.text 
+				position absolute
+				bottom 40px
+				left 0
+				right 0
+				margin 0
+			
+			.author
+				font-size 0.5em
+				display block
+				line-height 1
+			
+			@media (min-width: 1024px)
+				font-size 2em
+				
+		&.sort
+			color #FFF
+			text-transform uppercase
+			display table
+			height 294px
+			
+			.vaWrapper
+				display table-cell
+				width 99%
+				height 100%
+				vertical-align middle
+			
+				@media (min-width: 320px) and (max-width: 639px)
+					height 200px
+					display block
+					width 254px
+					margin 0 auto
+			
+			@media (max-width: 450px)
+				font-size 0.8em
+
+			@media (max-width 639px)
+				height 360px
+			
+			@media (min-width 641px)
+				height 340px
+
+			@media (min-width 768px)
+				height 384px
+				
+			@media (min-width 960px)
+				height 320px
+
+			@media (min-width 1024px)
+				height 342px
+				font-size 1.2em
+			
+			@media (min-width 1025px)
+				height 340px
+			
+			@media (min-width 1280px)
+				height 383px
+				
+			b 
+				font-size 2.3em
+				display block
+				font-weight normal
+				letter-spacing 3px
+				
+			span
+				background url(../images/arrowDown.png) no-repeat right 3px
+				font-size 1em
+				display block
+				padding 0 40px
+				letter-spacing 1px
+				margin 0 1em 0 -1em
+				line-height 1
+				
+				@media (min-width: 320px)
+					padding 0 25px 0 10px
+					background-size 12%
+					margin 0 5px 0 0
+					letter-spacing 0px
+					font-size 1.1em
+					
+				@media (min-width: 641px) and (max-width: 768px)
+					padding 0 40px 0 20px
+					background-size 15%
+					margin 0 0.5em 0 -0.5em
+					letter-spacing 0px
+					font-size 0.8em
+		.note
+			color #FFF
+			text-transform uppercase
+			display table
+			height 100%
+			
+			@media (min-width:320px) and (max-width: 639px)
+				height 300px
+			
+			@media (min-width: 768px)
+				min-height 294px
+				
+			
+			.vaWrapper
+				display inline-block
+				width 99%
+				height 100%
+				vertical-align middle
+				font-size 1em
+			
+				@media (min-width: 320px) and (max-width: 639px)
+					height 200px
+					display block
+					width 254px
+					margin 0 auto
+			
+			p 
+				text-transform none
+				width 90%
+				margin 0 auto
+				font-size 1.5em
+				line-height 1.1
+				font-family Gotham Light
+
+		.socialIcons
+			background-color #F4F4F4
+			display table
+			
+			&.vaWrapper
+				display inline-block
+				width 100%
+				height 100%
+				vertical-align middle
+				font-size 1em
+				
+				ul
+					margin 0
+					width 100%
+					padding 0 .8em
+					
+				
+				li 
+					height auto
+					padding 0 .7em
+					left 0
+					right 0
+					position relative
+					margin 0
+					padding-bottom 30%
+					
+					@media (min-width:320px) and (max-width: 639px)
+						width 33% !important
+
+					a 
+						position absolute
+						margin 0
+						top 0
+						bottom 0
+						left 0
+						right 0
+						text-align center
+						
+						&:before 
+							content: '';
+							display: inline-block;
+							height: 100%;
+							vertical-align: middle;
+							margin-right: -0.25em; /* Adjusts for spacing */
+
+
+					img
+						width 100%
+						max-width 65px
+						height auto
+						visibility visible
+						margin auto
+						display inline-block
+						vertical-align middle
+						text-align center
+		
+		.newsletter
+			background-color #F4F4F4
+			color #010101
+			text-align left
+			padding 1em
+			
+			@media (min-width: 768px)
+				min-height 358px
+			
+			@media (min-width: 960px)
+				min-height 295px
+			
+			@media (min-width: 1025px){
+				min-height 292px
+			}
+			
+			&.vaElement
+				width 100%
+				height 100%
+				font-size 1em
+			
+			
+			&.vaElement:before /* reset vertical centering for nested elements */
+					content none
+					display none
+					height auto
+					margin-right 0px
+			h5
+				font-size 1.875em
+				color #010101
+				text-transform uppercase
+				font-weight normal
+				text-align left
+				margin 0.5em 0 0
+			
+			p 
+				margin 0
+			
+			input[type=email]
+				background-color #afa198
+				border none
+
+			a 
+				color #dda21d
+				margin 1em 0 1em
+			
+			input
+				width 90%
+				
+
+						
+	.small-6,
+	li	
+		
+		@media (min-width: 320px) and (max-width: 639px)
+			width 100%
+			
+#paginationWrapper
+	@media (min-width 1025px)
+		margin-right 1.2em
+	@media (min-width 1281px)
+		margin-right 0			
+.paginationWrapper
+	
+	.pagination
+		margin 1em 0
+		
+		@media (min-width: 320px) and (max-width: 639px)
+			text-align center
+			
+		@media (min-width: 961px) and (max-width: 1023px)	
+			float right
+			margin-top -50px
+		@media (min-width: 1024px)
+			float right
+			
+	.displaying
+		font-size 1.5em
+		
+		@media (min-width: 320px) and (max-width: 639px)
+			font-size 1.1em
+			text-align center
+	
+	.products
+		font-size 1.1em
+		
+		@media (min-width: 320px) and (max-width: 639px)
+			font-size 0.9em
+			text-align center

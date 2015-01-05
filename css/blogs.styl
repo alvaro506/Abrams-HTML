@@ -1,0 +1,151 @@
+.blogNav
+	text-transform uppercase
+	ul
+		padding 0px
+		margin 40px 0 10px 0
+		
+		li
+			list-style none
+			font-size 1.4em
+			line-height 2
+			
+			@media (min-width: 960px)
+				float left
+				padding 0 30px
+				font-size 1.1em
+				line-height 1.5
+				
+				&:nth-of-type(1)
+					padding-left 0px
+				
+				&:nth-of-type(4)
+					padding-right 0px
+			
+			@media (min-width: 1025px) and (max-width 1120px)
+				padding 0 25px
+			a 
+				font-family 'Gotham Book'
+				
+			
+			.book
+				color #fd6c35
+			
+			.comicarts
+				color #ffb717
+				
+			.amulet
+				color #24cbd3 
+				
+			.craft
+				color #b5be01
+					
+			span
+				display inline
+				font-family 'Gotham Light'
+				font-size 1.7em
+				color inherit
+				line-height 0.5
+	span
+		display block
+		clear both
+		color #9b9da0
+		font-size 0.875em
+
+.blogList
+	.columns
+		padding-top  1.215em
+		padding-bottom  1.215em
+		
+		@media (max-width 959px)
+			padding-left 0em
+			padding-bottom 0em
+			padding-right 0em
+	
+		@media (min-width 641px) and (max-width 1024px)
+			padding 1.215em
+		
+		&.large-6	
+			@media (min-width 769px)
+				width 50%
+
+	.post
+		background-color #f1f1f1
+		padding 2.25em	
+		width 100%
+		height 100%	
+		position relative
+
+		&.craft
+			a.blog, h2
+				color #b5be01
+				
+		&.amulet
+			a.blog, h2
+				color #24cbd3
+		&.books
+			a.blog, h2
+				color #fd6c35
+			
+		&.comicarts
+			a.blog, h2
+				color #ffb717
+		
+		.blog, 
+		.follow, 
+		.more
+			text-transform uppercase
+			font-size 0.81em
+		.blog
+			margin-right 50px
+		h2
+			font-size 1.75em
+			line-height 1.2
+			margin 20px auto 24px
+		img
+			margin 0 auto
+			width 100%
+		h3
+			font-size 1.4em
+			margin 10px 0 0
+			line-height 1.2
+		p 
+			margin 10px 0 65px
+			font-size 0.93em
+			
+		.more
+			position absolute
+			bottom 2.25rem
+			left 2.25rem
+
+.prevNext 
+	margin 20px auto
+	
+	@media (max-width 639px)
+		padding 1.215em 0
+		
+	@media (min-width 641px)
+		padding 1.215em
+	
+	@media (min-width 1025px)
+		padding-left 0px
+		padding-right 0px
+	
+	div
+		height 130px 
+	a 
+		font-family 'Gotham Light'
+		font-size 1.375em
+		color #FFF
+		line-height 2
+		text-transform uppercase
+		margin 40px 30px
+		
+		@media (max-width 639px)
+			font-size 1em
+			margin 50px 30px
+		
+	.left
+		float left
+	.rigth
+		float rigth
+		

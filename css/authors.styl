@@ -1,0 +1,408 @@
+#content
+	
+	.search
+		padding-top 58px
+		
+		@media (min-width 1025px) 
+			padding-left 24px
+			
+			
+		input
+			width 300px
+			height 50px
+			background-color #f1f1f1
+			border none
+			box-shadow none
+			padding 15px 18px
+			font-family 'Gotham Light'
+			font-size 1.1em
+			
+			@media (min-width 641px) and (max-width 767px)
+				font-size 0.9em
+			@media (min-width 1025px)
+				width 100%
+		
+		.letters 
+			margin-top 15px 
+			
+			@media (min-width 1025px) 
+				float right 
+			
+			a 
+				text-transform uppercase
+				color #000
+				margin 0 2px
+				
+				@media (max-width 639px)
+					margin 0
+					
+				// @media (min-width 641px) and (max-width 767px)
+				// 	font-size 1em
+					
+				@media (min-width 768px) and (max-width 1023px)
+					margin 0 1px
+					font-size 0.95em
+.authorsResults
+	-webkit-column-count 2 /* Chrome, Safari, Opera */
+	-moz-column-count 2 /* Firefox */
+	column-count 2
+	-webkit-column-gap 60px /* Chrome, Safari, Opera */
+	-moz-column-gap 60px /* Firefox */
+	column-gap 60px
+	margin-bottom 65px
+	
+	@media (max-width 639px)
+		-webkit-column-count 1 /* Chrome, Safari, Opera */
+		-moz-column-count 1 /* Firefox */
+		column-count 1
+		
+	@media (min-width 768px)
+		-webkit-column-count 3 /* Chrome, Safari, Opera */
+		-moz-column-count 3 /* Firefox */
+		column-count 3
+		-webkit-column-gap 40px /* Chrome, Safari, Opera */
+		-moz-column-gap 40px /* Firefox */
+		column-gap 40px
+	
+	a
+		display block
+		font-family 'Gotham Book'
+		font-weight bold
+		font-size 1em
+		line-height 2
+		width 100%
+		color #000
+		padding-left 5px
+	
+		&:hover
+			color #FFF
+			background-color #e31c23
+			
+		@media (max-width 639px)
+			line-height 1
+			padding 5px
+			margin-bottom 5px
+			
+		
+		@media (min-width 1025px)
+			padding-left 24px
+			font-size 1.125em
+	
+.author
+	color #FFF
+	margin 50px auto 0
+	padding-right 1.2em
+	
+	@media (min-width 641px) and (max-width 1024px)
+		width: 97%
+	
+	@media (min-width 1025px)
+		padding-right 0px
+
+	h2
+		margin 20px 0
+		
+		@media (min-width 1025px)
+			font-size 2.5em
+
+	p 
+		font-size 1.125em
+		line-height 2
+		margin 0 0 20px 0
+		
+		@media (min-width 1025px) 
+			font-size 1em
+			line-height 1.4
+		
+	img
+		float left
+		margin-left calc(-1.215em - 5px)
+		margin-left -webkit-calc(-1.215em - 5px)
+		margin-right 1.25em
+
+#results 
+	
+	.authorBoxes
+		text-align center
+		// padding 0.7rem
+		font-family "Gotham Light"
+		
+		// @media (min-width: 1025px)
+		// 	padding 0.8rem 0.6rem
+		
+		a 
+			display inline-block
+			vertical-align middle
+		
+		img 
+			margin 1.5rem auto
+			width auto
+			height 223px	
+			display: inline-block; /* styles for centering vertically*/
+			vertical-align: middle; /* styles for centering vertically*/
+			
+			
+			@media (min-width:641px) and (max-width: 768px)
+				height 314px
+			@media (min-width:769px) and (max-width: 960px)
+				height 250px
+			@media (min-width:1024px) and (max-width: 1279px)
+				height 271px
+			@media (min-width: 1280px) and (max-width: 1919px)
+				height 269px
+			@media (min-width: 1920px)
+				height 324px
+			
+	.authorPhoto
+		background-color #f4f4f4
+		width 100%
+		height 100%
+		
+		img
+			margin 0
+			height 100%
+			width auto
+	
+	.book
+		background-color #F4F4F4
+		width 100%
+		height 100%
+		display block
+
+	.socialIcons
+				background-color #F4F4F4
+				display table
+				
+				&.vaWrapper
+					display inline-block
+					width 100%
+					height 100%
+					vertical-align middle
+					font-size 1em
+					
+					ul
+						margin 0
+						width 99%
+					
+					li 
+						height auto
+						padding .5em .5em .5em .7em
+						
+						@media (min-width:320px) and (max-width: 639px)
+							width 33% !important
+						
+						a 
+							text-align right
+
+						img
+							margin 0
+							width 100%
+							height auto
+// .highlightBoxes 
+// 	margin-left -10px
+// 	padding-left 0px
+// 	padding-right 0
+// 	margin-top 0.8em
+	
+// 	@media (min-width 641px) and (max-width 1024px)
+// 		padding-left 0.8em
+// 		padding-right 0.8em
+	
+	
+// 	ul
+// 		margin 0
+		
+// 		li
+// 			position relative
+		
+// 			@media (max-width: 639px)
+// 				width 100%
+// 				padding 0.6em 0.8em
+				
+// 			@media (min-width: 640px)
+// 				padding-bottom 33%
+				
+// 			@media (min-width: 1025px)
+// 				padding-left 0.6rem
+// 				padding-right 0.6rem
+// 				&:nth-of-type(3n+1),
+// 				&.no-padding-left
+// 					padding-left 0px
+// 					padding-right 1.2rem
+// 				&:nth-of-type(3n+3),
+// 				&.no-padding-right
+// 					padding-right 0px
+// 					padding-left 1.2rem
+// .highlightBoxes ul .vaWrapper
+// 	position absolute
+// 	top 6px
+// 	bottom 10px 
+// 	text-align center
+// 	line-height 1
+// 	color #FFF
+// 	font-family 'Gotham Light'
+// 	text-transform uppercase
+	
+// 	@media (max-width: 639px)
+// 		position relative
+// 		left 0px !important
+// 		right 0px !important
+	
+		
+// 	&.share
+// 		text-align center
+// 		vertical-align middle
+// 		left 0px
+// 		right 20px
+	
+// 		@media (max-width: 639px)
+// 			height 150px !important
+		
+// 		@media (min-width: 640px) and (max-width: 690px)
+// 			left 0px
+// 			right 4px
+// 			top 2px
+// 			bottom 2px 
+			
+// 		.wrapper
+// 			font-size 1em
+// 			padding 0
+			
+			
+// 			span		
+// 				font-size 3em
+// 				letter-spacing 6px
+// 				display block
+				
+// 				@media (max-width: 640px)
+// 					font-size 1.2em
+// 					letter-spacing 3px
+			
+// 				@media (max-width: 960px)
+// 					font-size 1.8em
+// 					letter-spacing 5px
+				
+// 			.shareWidgets
+// 				display inline-block
+// 				width 22%
+// 				height 60px
+// 				font-size 0
+// 				padding 0
+// 				margin-top 10px
+// 				text-align center
+				
+// 				@media (max-width: 639px)
+// 					min-height 50px
+					
+					
+// 				img
+// 					width auto
+// 					height auto
+// 					vertical-align bottom
+				
+				
+				
+// 	&.more
+// 		left 10px
+// 		right 10px
+		
+// 		@media (max-width: 639px)
+// 			height 150px !important
+			
+// 		@media (min-width: 640px) and (max-width: 690px)
+// 			left 2px
+// 			right 2px
+// 			top 2px
+// 			bottom 2px 
+
+			
+// 		a 
+// 			display inline-block
+		
+// 			span 
+// 				display block
+				
+// 			@media (max-width: 639px)
+// 				font-size 1.6em
+// 				vertical-align middle
+				
+// 				span
+// 					font-size 0.7em
+// 					line-height 1.5
+// 					letter-spacing 2px
+					
+// 			@media (min-width: 640px)
+// 				font-size 2.25em
+// 				letter-spacing 1px
+				
+// 				span
+// 					font-size 0.7rem
+// 					line-height 1.5
+// 					letter-spacing 1px
+			
+// 			@media (min-width: 768px)
+// 				font-size 2.1em
+// 				letter-spacing 2px
+				
+// 				span
+// 					font-size 0.7rem
+// 					line-height 1.8
+// 					letter-spacing 2px
+			
+// 			@media (min-width: 960px)
+// 				font-size 2.3em
+// 				letter-spacing 4px
+				
+// 				span
+// 					font-size 0.7rem
+// 					line-height 2
+// 					letter-spacing 2px
+			
+// 			@media (min-width: 1024px)
+// 				font-size 2.7em
+// 				letter-spacing 4px
+				
+// 				span
+// 					font-size 0.7rem
+// 					line-height 2.2
+// 					letter-spacing 3px
+			
+// 			@media (min-width: 1280px)
+// 				font-size 3.25em
+// 				letter-spacing 5px
+				
+// 				span
+// 					font-size 0.625rem
+// 					line-height 2.5
+// 					letter-spacing 3px
+					
+// 	&.mayLike 
+// 		font-size 0.875rem
+// 		letter-spacing 2px
+// 		left 20px
+// 		right 0px
+		
+// 		@media (min-width: 640px) and (max-width: 690px)
+// 			left 4px
+// 			right 0px
+// 			top 2px
+// 			bottom 2px 
+
+		
+// 		.vaElement
+			
+// 			@media (max-width: 639px)
+// 				padding 10px 0
+
+// 			span
+// 				margin 5px auto
+
+// 			.prettyCovers
+// 				width 60%
+// 				display block
+// 				margin 20px auto 10px
+				
+// 				@media (min-width: 1280px)
+// 					width 190px
+// 					margin-top 10px
+

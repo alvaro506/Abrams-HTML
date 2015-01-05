@@ -1,0 +1,50 @@
+h1			
+
+	&.graphicBar.imprint
+		height 71px
+		margin 0px
+		background-image url(../images/imprint/abrams-comicarts.png)
+		background-repeat no-repeat
+		background-position 97% center
+		background-position -webkit-calc(100% - 10px) center /* Sf 6 */
+		background-position right 10px center /* Cr 25+, FF 13+, IE 9+, Op 10.5+ */
+		background-size auto 80%
+		
+		@media (max-width: 1024px)
+			background-position 96% center
+			background-position -webkit-calc(100% - 30px) center
+			background-position right 30px center
+		@media (min-width: 1280px)
+			background-position 45px center
+
+#results
+	@media (min-width: 1025px)
+		padding-right 0px /* to align modules with the carousel */
+		
+	ul li img, 
+	.columns img
+		@media (min-width 1280px)
+			height 306px /* height for an #results column aligned with the carousel (without padding right) */
+	
+
+	.note.logo 
+		@media (min-width: 1025px)
+			min-height 311px /* for modules aligned with the carousel */ 
+		
+		img 
+			height auto !important
+			margin 0 !important
+			width 100% !important;
+			
+	.columns .note.logo .vaWrapper
+		height 75% !important /* To adjust the vertical alignment when there is an image at the top */
+
+		
+		
+
+#paginationWrapper 
+	@media (min-width 1025px)
+		margin-right 0px
+		width 100%
+
+
