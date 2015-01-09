@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<!-- Replace with WP title variable --><title>Abrams</title>
         <link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/foundation.css" rel="stylesheet" type="text/css" />
@@ -14,6 +15,7 @@
 		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 		<script type="text/javascript" src="js/menuManager.js"></script>
 		<script type="text/javascript" src="js/sliderSettings.js"></script>
+		<script type="text/javascript" src="js/newReleases.js"></script>
 	</head>
     <body><div class="pageWrapper">
         <!-- HEADER END -->
@@ -351,12 +353,94 @@
         <!-- Jssor Slider End -->
         	
         	
-            <div class="row" id="newReleases">
+             <div class="row" id="newReleases">
 				<div class="small-12 columns end">
-                
+                <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+    <div id="releasesSlider" style="position: relative; top: 0px; left: 0px; width: 1100px; height: 360px; overflow: hidden; background-color:#EBE6E3;">
+
+        <!-- Slides Container -->
+        <h5 style="color:#afa198;letter-spacing: 5px;font-size: 1.05em; margin-top:27px;">NEW RELEASES</h5>
+                <div u="slides" style="cursor: move; position: absolute; left: 80px; top: 22px; width: 960px; height: 300px; overflow: hidden; background-color:#EBE6E3">
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book01.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            <div class="hoverelement">
+                <a u="image" href="" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book02.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            <div class="hoverelement">
+                <a u="image" href="" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book03.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+
             
-                
-					<img src="images/home/newReleasesFPO.jpg" />
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book04.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book05.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+            
+            <div class="hoverelement">
+                <a title="" u="image" href="#" target="_blank"><img title="" alt="" class="prettyCovers" src="images/home/book06.png" /></a>
+                <div class="contentelement">
+                    <div class="contentbackground"></div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 03 css */
+            /*
+            .jssora03l              (normal)
+            .jssora03r              (normal)
+            .jssora03l:hover        (normal mouseover)
+            .jssora03r:hover        (normal mouseover)
+            .jssora03ldn            (mousedown)
+            .jssora03rdn            (mousedown)
+            */
+            .releasesLeft, .releasesRight
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                overflow:hidden;
+            }
+            .releasesLeft:hover, .releasesRight:hover
+            {
+            	background-position:0px;
+            }
+            .releasesLeft { background: url(images/arrowLeft.png) no-repeat;width: 12px; height: 34px; top: 141px; left: 25px; }
+            .releasesRight { background: url(images/arrowRight.png) no-repeat;width: 12px; height: 34px; top: 141px; right: 25px }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="releasesLeft jssora03l" style="">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="releasesRight jssora03r" style="">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+    </div>
+    <!-- Jssor Slider End -->
+            
 				</div><!--end of .columns-->
 			</div><!--end of .row-->
             

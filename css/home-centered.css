@@ -1,77 +1,30 @@
-h1.overSlider{
-	font-size:4.3em;
-	position:absolute;
-	width:100%;
-	text-align:center;
-	top:85px;
-	text-transform:uppercase;
-	z-index:3;
-	color:#fff;
-	letter-spacing:-2px;
-	margin:0 auto;
-	line-height: 1;
+.pageWrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 80em;
+	position: relative;
 }
 
-@media (min-width:768px){
-	h1.overSlider{
-		font-size:5.8em;
-		top:95px
-	}
+@media only screen and (min-width: 1280px) {
+
+#baseMenu {
+left: -webkit-calc(50% - 640px);
+left: calc(50% - 640px);
+}
+#subMenu {
+	left: -webkit-calc(50% - 640px + 160px);
+left: calc(50% - 640px + 160px);
+}
 }
 
-@media (min-width:960px){
-	h1.overSlider{
-		font-size:7em;
-		top:120px
-	}
+#content{
+left: -webkit-calc(50% - 470px);
+left: calc(50% - 470px);
 }
-@media (min-width:1024px){
-	h1.overSlider{
-		font-size:7.8em;
-		top:125px;
-		letter-spacing:-4px;
-		}
-	}
-@media (min-width:1025px){
-	h1.overSlider{
-		font-size:6.8em;
-		top:100px;
-		letter-spacing:-10px;
-		}
-	}
-@media (min-width:1280px){
-	h1.overSlider{
-		font-size:8em;
-		top:140px;
-		letter-spacing:0px;
-	}
-}
-@media (min-width:1920px){
-	h1.overSlider{font-size:7.75em;top:200px}
-}
-h1 .tagline {
-	display: block;
-	font-size: 12px;
-	letter-spacing: 6px
 
-}
-@media (min-width:960px){
-	h1 .tagline {
-		font-size: 15px;
-}
-	}
-@media (min-width:1025px){
-	h1 .tagline {
-		letter-spacing: 4px
-}
-	}
-h1 .tagline b {
-	font-family:'Gotham Book';
-	font-weight: bold
-}
-#slider.full {
-	margin: 0px;
-}
 #newReleases{
 }
 #newReleases img {
@@ -82,13 +35,6 @@ h1 .tagline b {
 	padding-right: 0.625em;
 	padding-top: 25px;
 }
-@media (min-width: 1025px) {
-	.columns, .column {
-		padding-left: 0px;
-		padding-right: 0px;
-}
-}
-
 h3, h2 {
 	font-weight: normal;
 }
@@ -96,40 +42,23 @@ h3, h2 {
 	width:auto;
 }
 .categoryTitle{
-	margin: 0 0 11px;
+	margin: 0px;
 	text-transform: uppercase;
 	font-size: 0.875em;
-	line-height: 1;
+	line-height: 2;
 }
-@media (max-width: 639px) {
-	.categoryTitle{
-		font-size:  0.6em;
-	}
-}
-.columns .widgetTitle {
+.columns .widgetTitle{
 	margin: 0px;
 	font-size: 1.5em;
 	text-transform:none;
-	line-height: 1.4;
+	line-height: 1.4
 }
-@media (max-width: 639px) {
-	.columns .widgetTitle {
-		font-size: 1.1em;
-		line-height: 1.3;
-}
-	}
 .columns .widgetText{
 	line-height:1.4;
 	margin-bottom:0;
 	margin-top: 0px ;
 	font-size:1.5em;
 }
-@media (max-width: 639px) {
-	.columns .widgetText{
-		font-size: 0.95em;
-		line-height: 1.3;
-	}
-	}
 @media (min-width: 768px) {
 	.columns .widgetTitle{ 
 		font-size: 1.5em;
@@ -143,7 +72,7 @@ h3, h2 {
 }
 @media (min-width: 960px) {
 	.columns .categoryTitle{
-		font-size: 1.125em;
+		font-size: 1.125em
 	}
 	.columns .widgetTitle{ 
 		font-size: 2.25em
@@ -154,8 +83,7 @@ h3, h2 {
 }
 @media (min-width: 1280px) {
 	.columns .categoryTitle{
-		font-size: 1.5em;
-		margin-bottom: 14px;
+		font-size: 1.5em
 	}
 	.columns .widgetTitle{ 
 		font-size: 3em
@@ -173,11 +101,6 @@ h3, h2 {
 	height:240px;
 	cursor:pointer;
 	position:relative;
-}
-@media (max-width: 640px) {
-	.offHover {
-		height: auto;
-	}
 }
 @media (min-width: 960px) {
 	.offHover {
@@ -210,7 +133,7 @@ h3, h2 {
 @media (min-width: 1024px) {
 	.singleImage .offHover,
 	.singleImage img {
-	height: 320px;
+	height: 310px;
 	}
 
 }
@@ -225,35 +148,17 @@ h3, h2 {
 
 .singleImageFull .offHover { /* For full width images */
 	height: auto;
-	overflow: hidden;
 }
 
 .imageRight{
 	float:right;
 }
-@media (max-width: 640px) {
-	.imageRight{
-	float:left;
-	width: 100%;
-}
-	.imageLeft{
-	width: 100%;
-}
-	}
 .imageLeft{
 	float:left;
 }
 .imageLeft img,
 .imageRight img{
 	height:240px;
-}
-@media (max-width: 640px) {
-	.imageLeft img,.imageRight img{
-		max-width: 620px;
-		width: 100%;
-		height: auto;
-		float: left;
-	}
 }
 @media (min-width: 960px) {
 	.imageLeft img,.imageRight img{
@@ -269,42 +174,22 @@ h3, h2 {
 	width: auto;
 	overflow:hidden;
 	color:white;
-	padding:20px;
+	padding:10px;
 	height: 240px;
 }
-@media (max-width: 640px) {
-	.text {
-		padding:15px;
-		height: auto
-	}
-}
+
 @media (min-width: 960px) {
 	.text {
 		height: 320px;
-		padding:30px;
 	}
 }
-@media (min-width: 1025px) {
-	.text {
-		padding:20px;
-	}
-}
+
 @media (min-width: 1280px) {
 	.text {
 		height: 360px;
 		padding: 40px;
 	}
 }
-@media (min-width: 1025px) {
-	.seller {
-		padding-right: 25px !important;
-	}
-	.seller.end {
-		padding-left: 25px !important;
-		padding-right: 0px !important;
-	}
-}
-
 .seller .offHover{
 	text-align:center;
 	padding-top: 40px;
@@ -341,28 +226,26 @@ h3, h2 {
 }
 .seller h5 {
 	font-size: 1.5em;
-	margin: 5px 0 38px;
+	margin: 0 0 38px;
 	letter-spacing: 2px;
-	font-family: 'Gotham Book';
-	font-weight: normal;
 }
 @media (min-width: 641px) {
 	.seller h5 {
 	font-size: 0.75em;
-	margin: 5px 0;
+	margin: 0 0 5px;
 }
 }
 @media (min-width: 960px) {
 	.seller h5 {
-	font-size: 0.87em;
-	margin: 5px 0 27px;
+	font-size: 0.75em;
+	margin: 0 0 27px;
 }
 }
 .seller img{	
 	/*height: 180px;
 	display: inline-block;*/
-	width: auto;
-	height: 180px;
+	width: 60%;
+	height: auto;
 	margin: 0 auto;
 }
 @media (min-width: 641px) {
@@ -406,11 +289,7 @@ h3, h2 {
 	color:white;
 	display:none;
 }
-@media (max-width: 639px) {
-	.onHover {
-		font-size: 75%;
-	}
-}
+
 .onHover h2{
 	text-transform:uppercase;
 	font-size: 2.5em;
@@ -445,16 +324,7 @@ h3, h2 {
 .seller .onHover p {
 	font-size: 2.625em
 }
-@media (max-width: 639px) {
-	.seller .onHover h2 {
-		font-size: 3.6em;
-		line-height: 1;
-	}
-	.seller .onHover p {
-	font-size: 2.2em
-}
-}
-@media (min-width: 641px) {
+@media (min-width: 768px) {
 	.seller .onHover h2 {
 		font-size: 1.5em;
 		line-height: 1;
@@ -488,12 +358,6 @@ h3, h2 {
 .singleImage .onHover p {
 	font-size: 1.9em;
 	margin-top: 0px 
-}
-@media (max-width: 639px) {
-	.singleImage .onHover h2 {
-	font-size: 3em;
-	margin-bottom: 10px; 
-}
 }
 .singleImageFull .onHover h2 {
 	font-size: 2em;

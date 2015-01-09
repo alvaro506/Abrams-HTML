@@ -3,21 +3,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<!-- Replace with WP title variable --><title>Abrams</title>
         <link href="css/normalize.css" rel="stylesheet" type="text/css" />
         <link href="css/foundation.css" rel="stylesheet" type="text/css" />
         <link href="css/general-styles.css" rel="stylesheet" type="text/css" />
-        <link href="css/connect.css" rel="stylesheet" type="text/css" />
+        <link href="css/home-centered.css" rel="stylesheet" type="text/css" />
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery.nicescroll.js"></script>
-		<script src="js/vendor/modernizr.js"></script>
+        <!-- JSSOR slider used as placeholder - replace with WP-friendly sliders -->
+		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 		<script type="text/javascript" src="js/menuManager.js"></script>
+		<script type="text/javascript" src="js/sliderSettings.js"></script>
 	</head>
     <body>
     	<div class="pageWrapper">
         <!-- HEADER END -->
-<!-- SIDEBAR START -->
+        <!-- SIDEBAR START -->
         <div id="menu">
         	<div id="topBar">
             	<div id="hamburgerMenu"><a id="mobile-menu" href="#"><span class="helper"></span><img src="images/hamburger.png" /></a></div>
@@ -27,17 +28,17 @@
         <div id="baseMenu"><a href="index.html" id="AbramsLogoMenu"><img src="images/AbramsLogo.jpg"   /></a>
             <ul>
                 <!-- Not sure if menu items will come from database, but each item needs to have personalized styles for ir font size and color-->
-                <li id="bookMenuItem" class="baseMenuItem "><a href="#" >Books</a></li>
-                <li id="kidsMenuItem"  class="baseMenuItem "><a href="#">Kids</a></li>
-                <li id="giftMenuItem"  class="baseMenuItem "><a href="#">Gift & paper</a></li>
-                <li id="imprMenuItem"  class="baseMenuItem "><a href="#">Imprints</a></li>
-                <li id="authMenuItem"  class="baseMenuItem "><a href="#">Authors</a></li>
-                <li id="connMenuItem"  class="baseMenuItem "><a href="#">Connect</a></li>
-                <li id="blogMenuItem" class="baseMenuItem "><a href="#">Blogs</a></li>
-                <li id="evenMenuItem"  class="baseMenuItem "><a href="#">Events</a></li>
-                <li id="resoMenuItem"  class="baseMenuItem "><a href="#">Resources</a></li>
-                <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
-                <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
+                <li id="bookMenuItem" class="baseMenuItem ">Books</li>
+                <li id="kidsMenuItem"  class="baseMenuItem ">Kids</li>
+                <li id="giftMenuItem"  class="baseMenuItem ">Gift & paper</li>
+                <li id="imprMenuItem"  class="baseMenuItem ">Imprints</li>
+                <li id="authMenuItem"  class="baseMenuItem ">Authors</li>
+                <li id="connMenuItem"  class="baseMenuItem ">Connect</li>
+                <li id="blogMenuItem" class="baseMenuItem ">Blogs</li>
+                <li id="evenMenuItem"  class="baseMenuItem ">Events</li>
+                <li id="resoMenuItem"  class="baseMenuItem ">Resources</li>
+                <li id="cataMenuItem"  class="baseMenuItem ">Catalogs</li>
+                <li id="compMenuItem"  class="baseMenuItem ">Company</li>
             </ul>
             <!-- Replace following line with search code -->
             <img class="search" src="images/searchBox.jpg" />
@@ -308,74 +309,225 @@
         <!-- SIDEBAR END -->
         <!-- CONTENT START -->
         <div id="content">
-			<h1 class="blue">Connect</h1>
-			<div class="row">
-				<div class="small-11 small-centered medium-12 columns end text">
-					<p>Founded by Harry N. Abrams in 1949, ABRAMS is the preeminent publisher of high quality art and illustrated books. Now a subsidiary of La Martinière Groupe, ABRAMS is the publisher of bestsellers such as the wildly popular Diary of a Wimpy Kid series by Jeff Kinney, the award-winning cookbooks of Alton Brown, and the stunning photography of Yann Arthus-Bertrand’s Earth from Above. ABRAMS publishes books in the areas of art, photography, cooking, interior design, craft, fashion, sports, pop culture, as well as children’s books and general interest. The company’s imprints include Abrams Books, Abrams Appleseed; Abrams ComicArts, Abrams Image, Abrams Books for Young Readers, Amulet Books, Stewart, Tabori & Chang, SelfMadeHero, and STC Craft/Melanie Falick Books.</p>
-				</div>
-			</div>
-			<!-- Highlight Boxes -->
-			<div class="row">
-				<div class="small-11 small-centered medium-12 columns end">
-					<div class="row highlightBoxes">
-						<div class="columns small-4">
-							<div class="darkbeige share vaWrapper">
-								<div class="wrapper vaElement">
-									<span>share</span>
-									<div class="shareWidgets"><a href="#" class="fb"></a></div>
-                                <div class="shareWidgets"><a href="#" class="tw"></a></div>
-                                <div class="shareWidgets"><a href="#" class="in"></a></div>
-                                <div class="shareWidgets"><a href="#" class="go"></a></div>
-								</div>
-							</div>
-						</div>
-						<div class="columns small-4">
-							<div class="bluesky more vaWrapper">
-								<a href="#" class="vaElement"><span>Other categories</span>Comics</a>
-							</div>
-						</div>
-						<div class="columns small-4">
-							<div class="darkbeige mayLike vaWrapper">
-                                <div class="vaElement">
-                                    <span>You may also like</span>
-                                    <a href="#" class="book">
-                                        <div class="prettyCovers" style="background-image:url(images/book/cover-dreamworks.jpg)"/><img src="images/book/cover-dreamworks.jpg" alt=""/>
-                                        <div class="satinTexture"></div></div>
-                                    </a>
-                                </div>
-                            </div>
-						</div>
+         <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+        <div id="slider" class="full" style="height: 900px; 
+    width: 1920px;">
+            <!-- Slides Container -->
+            <div u="slides" class="slides" style="width: 1920px; height: 900px;">
+                <div class="item"><img u="image" src="images/home/NYC_image.jpg" /><div class="caption">New York Air by George Steinmetz</div></div>
+                <div class="item"><img u="image" src="images/home/sinatra.jpg" /><div class="caption">Sinatra: The Classic Photographs</div></div>
+                <div class="item"><img u="image" src="images/home/astronaut.jpg" />
 
-					</div><!--end of .row-->
+                <div class="caption">The Art of the Simon and Kirby Studio</div></div>
+            </div>
+             <!-- Arrow Navigator Skin Begin
+                    /* jssor slider bullet navigator skin 05 css */
+            
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+             -->
+          <!-- Arrow Left --> 
+          <span u="arrowleft" class="arrowLeft jssora03l"> </span> 
+          <!-- Arrow Right --> 
+          <span u="arrowright" class="arrowRight jssora03r"> </span> 
+          <!-- Arrow Navigator Skin End --> 
+          
+            <!-- bullet navigator container -->
+           <div u="navigator" class="navigator jssorb05" style="">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="position: absolute; width: 20px; height: 20px;"></div>
+        </div>
 
+            <!-- Bullet Navigator Skin End -->
+          
+        </div>
+        <!-- Jssor Slider End -->
+        	
+        	
+            <div class="row" id="newReleases">
+				<div class="small-12 columns end">
+                
+            
+                
+					<img src="images/home/newReleasesFPO.jpg" />
 				</div><!--end of .columns-->
-			</div><!--end of .row & Highlight Boxes -->
-			<footer>
-			<ul class="nav">
-				<li><a href="#">Company</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Imprints</a></li>
-				<li><a href="#">Catalogs</a></li>
-				<li><a href="#" class="last">Sitemap</a></li>
-			</ul>
-			<ul class="legal">
-				<li><a href="#">Copyright and Terms</a></li>
-				<li><a class="last" href="#">Privacy Policy</a></li>
-				
-				
-			</ul>
-<span>&copy; 2014 ABRAMS -- A subsidiary of La Martini&egrave;re Groupe</span>
-		</footer>
-		</div><!--end of #content-->
-		</div><!--#pageWrapper END -->
-
-        <!-- Foundation javascripts --> 
+			</div><!--end of .row-->
+            
+            <div class="row" >
+				<div class="small-12 columns end performingArts">
+                    <div class="offHover lightblue">
+                        <div class="imageRight"><img src="images/home/simpsons.jpg" /></div>
+                        <div class="text">
+                            <h3 class="categoryTitle">Performing Arts</h3>
+                            <h2 class="widgetTitle">The Simpsons<br />Family History</h2>
+                            <p class="widgetText">Marvel at the hidden moments you never knew you missed, as all the pieces of Simpsons history fall into place. Chock full of art taken directly from the source, this massive tome... must ... for...Simpsons fans and the perfect way to celebrate The Simpsons’ 25th anniversary.</p>
+                        </div>
+                        
+                    <div class="onHover lightblue vaWrapper">
+                        <div class="vaElement">
+                            <h2>Enter to win</h2>
+                            <p>a copy of <br />THE SIMPSONS FAMILY HISTORY<br />before it goes on sale!</p>
+                        </div>
+                    	
+                    </div>
+                    </div>
+				</div><!--end of .columns-->
+			</div><!--end of .row-->
+            <div class="row" >
+				<div class="small-12 columns end photography">
+                    <div class="offHover darkorange">
+                	<div class="imageLeft"><img src="images/home/clinch.jpg" /></div>
+                	<div class="text">
+                        <h3 class="categoryTitle">Photography</h3>
+                        <h2 class="widgetTitle">Danny Clinch<br />Still Moving</h2>
+                        <p class="widgetText">Danny Clinch has established himself as a premier photographer of the popular music scene, photographing a wide range of art­ists from Johnny Cash and Tupac Shakur to Björk ... and Dave Matthews. His photos have </p>
+                    </div>
+                    <div class="onHover darkorange vaWrapper">
+                        <div class="vaElement">
+                            <h2>Danny Clinch</h2>
+                            <h3>Still Moving</h3>
+                            <p>By Danny Clinch. Foreword by Bruce Springsteen</p>
+                        </div>
+                    </div>
+                    </div>
+				</div><!--end of .columns-->
+			</div><!--end of .row-->
+            
+            
+            <div class="row">
+				<div class="small-12 medium-4 columns seller next2singleImg">
+                    <div class="offHover purple">
+                    <h5>Best Seller</h5>
+                    	<img class="prettyCovers" src="images/home/bookThumb1.jpg" />
+                        
+                    <div class="onHover purple vaWrapper">
+                        <div class="vaElement">
+                            <h2>Flea Market Fabulous</h2>
+                            <p>By Lara Spencer</p>
+                        </div>
+                    </div>
+                    </div>
+				</div>
+				<div class="small-12 medium-8 columns end singleImage">
+                    <div class="offHover lightBlue">
+                    <img src="images/home/wimpy.jpg" />
+                    <div class="onHover darkHover lightblue vaWrapper">
+                        <div class="vaElement">
+                            <h2>Wimpy Kid</h2>
+                            <p>Sneak Peek<br />DOWNLOAD NOW</p>
+                        </div>
+                    	
+                    </div>
+                    </div>
+				</div><!--end of .columns-->
+			</div><!--end of .row-->
+            
+            
+            <div class="row" >
+				<div class="small-12 columns end singleImageFull">
+                    <div class="offHover">
+	            		<img src="images/home/noterie.png" />
+                    <div class="onHover pink2 vaWrapper">
+                        <div class="vaElement">
+                            <h2>Abrams Noterie</h2>
+                            <p>New Gift & Paper<br />Product Line</p>
+                        </div>
+                    	
+                    </div>
+                    </div>
+				</div><!--end of .columns-->
+			</div><!--end of .row-->
+            
+            <div class="row" >
+				<div class="small-12 medium-8 columns end fashion">
+                    <div class="offHover pink">
+                		<div class="imageLeft">
+                			<img src="images/home/tory.jpg" />
+                         </div>
+                        <div class="text">
+                            <h3 class="categoryTitle">Fashion</h3>
+                            <h2 class="widgetTitle">Tory Burch<br />In Color</h2>
+                            <p class="widgetText">Tory Burch sees the world in color, inspired by people, places, and ideas—all of which influence her brand</p>
+                        </div>
+                    <div class="onHover pink vaWrapper">
+                        <div class="vaElement">
+                            <h2>Tory Burch<br />In Color</h2>
+                            <p>By Tory Burch</p>
+                        </div>
+                    	
+                    </div>
+                    </div>
+				</div>
+				<div class="small-12 medium-4 columns end seller">
+                    <div class="offHover orange">
+                    <h5>Best Seller</h5>
+                    	<img class="prettyCovers" src="images/home/bookThumb2.jpg" />
+                    <div class="onHover orange vaWrapper">
+                        <div class="vaElement">
+                            <h2>El Deafo</h2>
+                            <p>By Cece Bell</p>
+                        </div>
+                    </div>
+                    </div>
+				</div><!--end of .columns-->
+			</div><!--end of .row-->
+            
+            
+            <!-- Replace with categories from DB? -->
+            <div class="row" >
+				<div class="small-12 columns end">
+                    <div id="categoriesBlock">
+                        <a href="#" class="brown">Art</a>
+                        <a href="#" class="orange">ComicArts</a>
+                        <a href="#" class="pink">Craft</a>
+                        <a href="#" class="olive">Design & Decoration</a>
+                        <a href="#" class="orange">Kids</a>
+                        <a href="#" class="olive">Gardening</a>
+                        <a href="#" class="purple">Pop Culture</a>
+                        <a href="#" class="brown">Food & Wine</a>
+                        <a href="#" class="green">Nature</a>
+                        <a href="#" class="lightblue">Performing Arts</a>
+                        <a href="#" class="darkorange">Photography</a>
+                        <a href="#" class="pink">Fashion & Style</a>
+                        <a href="#" class="olive">Gifts</a>
+                    </div><!-- End of categories block -->
+				</div><!--end of .columns-->
+			</div><!--end of .row-->
+            
+        
+        <!-- CONTENT END -->
+        <!-- FOOTER START -->
+            <footer>
+                <ul class="nav">
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Imprints</a></li>
+                    <li><a href="#">Catalogs</a></li>
+                    <li><a href="#" class="last">Sitemap</a></li>
+                </ul>
+                <ul class="legal">
+                    <li><a href="#">Copyright and Terms</a></li>
+                    <li><a class="last" href="#">Privacy Policy</a></li>
+                    
+                    
+                </ul>
+                <span>&copy; 2014 ABRAMS -- A subsidiary of La Martini&egrave;re Groupe</span>
+            </footer> <!--FOOTER END -->
+        
+        </div><!--#CONTENT END -->
+    </div><!--.ROW END -->
+                <!-- Foundation javascripts --> 
 		<script src="js/vendor/fastclick.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script>
   		$(document).foundation();
   		<!-- // end of Foundation javascripts --> 
-</script>
-	</body>
+		</script>
+    </body>
 </html>
+<!--FOOTER END -->

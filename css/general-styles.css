@@ -1092,7 +1092,9 @@ padding:.6em 1.215em
 	}
 @media (max-width:639px) {
 .highlightBoxes .columns div.vaWrapper {
-position:relative
+position:relative;
+left: 0px !important;
+right: 0px !important;
 }
 }
 @media (min-width:640px) and (max-width:690px) {

@@ -10,7 +10,7 @@
 		img
 			height 550px
 			width auto
-			margin auto
+			margin 25px auto 0
 			bottom 0
 			top 0
 			
@@ -18,8 +18,7 @@
 				height 450px
 			
 			@media (min-width: 768px) and (max-width:1024px)
-				height 470px
-				top -30px
+				height 490px
 				
 			@media (min-width: 1025px)
 				height 550px
@@ -62,9 +61,15 @@
 		
 	
 	.title
-		font-size 2.68em
+		font-size 2.5em
 		text-transform uppercase
 		line-height 1
+		
+		@media (max-width:639px)
+			font-size 2.1em
+		
+		@media (min-width:768px)
+			font-size 2.68em
 		
 	.subTitle
 		font-size 1.25em
@@ -105,7 +110,7 @@
 	text-transform uppercase
 	margin-bottom 0px
 	position absolute
-	z-index 15
+	z-index 3
 	bottom 20px
 	right 34px
 	color #FFF	
@@ -120,7 +125,6 @@
 	bottom 0
 	left 0
 	right 0
-	opacity 0
 	display none
 
 	@media (max-width:640px)
@@ -155,7 +159,10 @@
 			font-weight bold
 			letter-spacing 3px
 			
-			@media (min-width: 640px) and (max-width: 768px)
+			@media (max-width: 640px) 
+				letter-spacing 0 
+			
+			@media (min-width: 641px) and (max-width: 768px)
 				font-size 1em
 				letter-spacing 1px
 		ul 	
@@ -170,23 +177,22 @@
 			margin 7px 0 
 	
 	.ebook
+		@media (max-width 620px) 
+			margin-top 1em
 		@media (min-width 1025px)
 			padding-right 45px
 		@media (min-width 1280px)
 			padding-right 85px
 	
-	.buy
-		font-size 1.625em
-		line-height 1		
-		text-transform uppercase
-		margin-bottom 0px
-		position absolute
-		bottom 20px
-		right 20px
-	
 
-				
-		
+	
+.header .cover
+	text-align center
+
+.header img 
+	margin 0 auto
+	text-align center
+			
 .header .bookMainInfo, /* For no carousel template */
 .header .bookDetails
 	margin-top 2.43em
@@ -197,11 +203,14 @@
 	@media (max-width: 639px)
 		margin-top 0.6em
 	
+	@media (max-width:640px)
+		min-height 15em
+	
 	@media (min-width: 1025px)
 		padding-left 38px
 		
 	@media (min-width:1280px)
-		min-height 371px
+		min-height 367px
 		
 .header .bookDetails /* For no carousel template */
 	@media (min-width: 1025px) {
