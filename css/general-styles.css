@@ -210,11 +210,12 @@ a {
 	padding:0px;
 }
 .baseMenuItem a {
-	padding:15px 30px;
+	padding:11pt 30px;
 	text-transform:uppercase;
 	background-color:#FFF;
 	line-height: 1;
 	display: block;
+	margin: 0px;
 }
 @media (min-width: 1025px) {
 	.baseMenuItem a {
@@ -226,7 +227,7 @@ a {
 #bookMenuItem a{
 	color:#fd6c35;
 	font-size:24px;
-	line-height: 0.9;
+	line-height: 90%;
 	letter-spacing: 1.3px
 }
 #bookMenuItem a:hover {
@@ -239,12 +240,12 @@ a {
 	line-height: 0.9;
 	letter-spacing: 0.6px;
 }
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
 	#kidsMenuItem a{
-		padding-top: 14px;
-		padding-bottom: 14px;
+		padding-top: 7pt;
+		padding-bottom: 7pt;
 	}
-	}
+	}*/
 @media (min-width: 1025px) {
 	#kidsMenuItem a{
 		padding-bottom: 3px;
@@ -262,6 +263,11 @@ a {
 	background-color:#b5be01;
 	color:#FFF;
 }
+@media (min-width: 1025px) {
+	#giftMenuItem a{
+		padding-bottom: 4px;
+	}
+	}
 #imprMenuItem a {
 	color:#009d4e;
 	font-size:19px;
@@ -269,7 +275,8 @@ a {
 }
 @media (max-width: 1024px) {
 	#imprMenuItem a {
-		padding-top: 16px;
+		padding-top: 11.9pt;
+		padding-bottom: 11.7pt;
 	}
 	}
 #imprMenuItem a:hover {
@@ -301,12 +308,13 @@ a {
 }
 @media (max-width: 1024px) {
 	#blogMenuItem a {
-		padding-top: 14px;
-		padding-bottom: 14px;
+		padding-top: 11.7pt;
+		padding-bottom: 10pt;
 	}
 	}
 @media (min-width: 1025px) {
 	#blogMenuItem a {
+		padding-top: 5px;
 		padding-bottom: 2px;
 	}
 	}
@@ -329,8 +337,7 @@ a {
 }
 @media (max-width: 1024px) {
 	#resoMenuItem a {
-		padding-top: 14px;
-		padding-bottom: 17px;
+		padding-bottom: 12pt;
 	}
 	}
 #resoMenuItem a:hover {
@@ -359,7 +366,7 @@ a {
 }
 @media (max-width: 1024px) {
 	#compMenuItem a {
-		padding-bottom: 16px;
+		padding-top: 12pt;
 	}
 	}
 #compMenuItem a:hover {
@@ -625,6 +632,15 @@ text-align: center;
 	overflow: hidden;
 	cursor: pointer;
 	}
+@media (min-width: 900px) {
+	.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+		-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	width:16px;
+	height:16px;
+	}
+}
 @media (min-width: 1025px) {
 	.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
 		-webkit-border-radius: 5px;

@@ -67,6 +67,13 @@
 		&.large-6	
 			@media (min-width 769px)
 				width 50%
+			@media (min-width 1025px) 
+				&:nth-of-type(2n+1)
+					padding-right 1.215em
+					padding-left 0 
+				&:nth-of-type(2n+2)
+					padding-left 1.215em
+					padding-right 0 
 
 	.post
 		background-color #f1f1f1
@@ -118,7 +125,7 @@
 			left 2.25rem
 
 .prevNext 
-	margin 20px auto
+	margin 0 auto 0.59em
 	
 	@media (max-width 639px)
 		padding 1.215em 0
@@ -128,8 +135,11 @@
 	
 	@media (min-width 1025px)
 		padding-left 0px
+		padding-right 25px
+		
+	@media (min-width 1282px)
+		padding-left 0px
 		padding-right 0px
-	
 	div
 		height 130px 
 	a 

@@ -44,10 +44,17 @@
                 <li id="cataMenuItem"  class="baseMenuItem "><a href="#">Catalogs</a></li>
                 <li id="compMenuItem"  class="baseMenuItem "><a href="#">Company</a></li>
             </ul>
-            <!-- Replace following line with search code -->
-            <img class="search" src="images/searchBox.jpg" />
-            <!-- Replace following line with shopping cart code 
-            <p class="cartMenu">(Cart 2)</p>-->
+      
+           <form name="searchForm" id="search-form">
+  
+       <input type="text" name="searchBox" title="Search here" />
+       
+</form>
+
+            
+
+            <!-- Replace following line with shopping cart code -->
+            <p class="cartMenu">(Cart 2)</p>
         </div>
         <div id="subMenu">
             <!-- Items here may be replaced with dynamic content, so only one div would be necessary, here it is repeatead as we deal with static example content, background style can be set by choosing a class color  -->   
@@ -316,10 +323,10 @@
             <!-- <h1 class="overSlider">Abrams<span class="tagline">The <b>art of books</b> since 1949</span></h1> -->
          <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
-        <div id="slider" class="full" style="height: 600px; 
-    width: 1100px;">
+        <div id="slider" class="full" style="height: 586px; 
+    width: 1075px;">
             <!-- Slides Container -->
-            <div u="slides" class="slides" style="width: 1100px; height: 600px;">
+            <div u="slides" class="slides" style="width: 1075px; height: 586px;">
                 <div class="item">
                     <img u="image" src="images/home/home_carousel_img_1.jpg" />
                     <img class="sliderLogo" src="images/AbramsLogoLarge.png" />
@@ -634,6 +641,7 @@
   		$(document).foundation();
   		<!-- // end of Foundation javascripts --> 
 		</script>
+
     </body>
 </html>
 <!--FOOTER END -->
