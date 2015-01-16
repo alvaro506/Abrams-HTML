@@ -95,6 +95,7 @@ var options = {
             function ScaleSlider() {
 				//var clientWidth=$(window).width();
 				var clientWidth=$('#content').width();
+                if($(window).width()>=1025)clientWidth=clientWidth-25;
 				if($(window).width()>1280)clientWidth=1120;
 		
                 var bodyWidth = document.body.clientWidth;

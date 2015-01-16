@@ -70,9 +70,10 @@ h1 .tagline b {
 	font-weight: bold
 }
 #slider.full {
-	margin: 0px;
+	margin: 0px 25px 0px 0px;
 }
-#newReleases{
+#newReleases h5{
+	font-family: 'Gotham Book'
 }
 #newReleases img {
 	width: 100%
@@ -83,6 +84,12 @@ h1 .tagline b {
 	padding-top: 25px;
 }
 @media (min-width: 1025px) {
+	.columns, .column {
+		padding-left: 0px;
+		padding-right: 25px;
+}
+}
+@media (min-width: 1285px) {
 	.columns, .column {
 		padding-left: 0px;
 		padding-right: 0px;
@@ -269,12 +276,13 @@ h3, h2 {
 	width: auto;
 	overflow:hidden;
 	color:white;
-	padding:20px;
-	height: 240px;
+	padding:20px 20px 0;
+	margin-bottom: 24px;
+	height: 216px;
 }
 @media (max-width: 640px) {
 	.text {
-		padding:15px;
+		padding:20px;
 		height: auto
 	}
 }
@@ -299,6 +307,12 @@ h3, h2 {
 	.seller {
 		padding-right: 25px !important;
 	}
+	.seller.end {
+		padding-left: 0px !important;
+		padding-right: 25px !important;
+	}
+}
+@media (min-width: 1285px) {
 	.seller.end {
 		padding-left: 25px !important;
 		padding-right: 0px !important;

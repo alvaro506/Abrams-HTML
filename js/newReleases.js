@@ -45,9 +45,24 @@
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
             function ScaleSlider() {
+                // var clientWidth = ('#content').width();        
+                // var bodyWidth = document.body.width();
+                // if ($(window).width()<=1024) {
+                //     jssor_slider2.$ScaleWidth(clientWidth-20);}
+                // else {
+                // if ($(window).width()>=1025) {
+                //     jssor_slider2.$ScaleWidth(clientWidth-25);
+                // }
+                // if ($(window).width()>1280) {
+                //     jssor_slider2.$ScaleWidth(clientWidth);
+                // }
+                // }
+                //window.setTimeout(ScaleSlider, 30);
                 var bodyWidth = $('#content').width();
+                if($(window).width()>=1025)bodyWidth=bodyWidth-25;
+                if($(window).width()>1280)bodyWidth=1120;
                 if (bodyWidth)
-                    jssor_slider2.$ScaleWidth(Math.min(bodyWidth, 1120));
+                    jssor_slider2.$ScaleWidth(bodyWidth);
                 else
                     window.setTimeout(ScaleSlider, 30);
             }

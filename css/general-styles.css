@@ -31,7 +31,7 @@
 @media (min-width: 1025px) {
 	.columns, .column { /* To remove padding in the 1st level cols */
 		padding-left: 0px;
-		padding-right: 0px;
+		padding-right: 25px;
 	}
 	.column .row .column,
 	.columns .row .columns, 
@@ -46,6 +46,22 @@
 	.row .row { /* to avoid the sum of margins */
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+	.columns.medium-12,
+	.columns.large-12 {
+		padding-left: 0;
+		padding-right: 25px;
+	}
+}
+@media (min-width: 1282px) {
+	.columns, .column { /* To remove padding in the 1st level cols */
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.columns.medium-12,
+	.columns.large-12 {
+		padding-left: 0;
+		padding-right: 0px;
 	}
 	.columns.large-4:nth-of-type(3n+1),
 	.columns.medium-4:nth-of-type(3n+1) {
@@ -72,13 +88,6 @@
 		padding-left: 0.9rem;
 		padding-right: 0;
 	}
-	.columns.medium-12,
-	.columns.large-12 {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	
 }
 
 
@@ -161,7 +170,7 @@ a {
 	height:61px;
 	position: fixed;
 	width: 100%;
-	z-index:4;
+	z-index:10;
 }
 #topBar{
 	background-color:#E31C23;
@@ -209,7 +218,7 @@ a {
 }
 @media (min-width: 1025px) {
 	.baseMenuItem a {
-		padding:7px 30px;
+		padding:5px 30px 4px;
 		margin-bottom: 1px;
 }
 
@@ -217,7 +226,8 @@ a {
 #bookMenuItem a{
 	color:#fd6c35;
 	font-size:24px;
-	line-height: 0.8;
+	line-height: 0.9;
+	letter-spacing: 1.3px
 }
 #bookMenuItem a:hover {
 	background-color: #fd6c35;
@@ -226,8 +236,20 @@ a {
 #kidsMenuItem a{
 	color:#ffb717;
 	font-size:40px;
-	line-height: 0.8;
+	line-height: 0.9;
+	letter-spacing: 0.6px;
 }
+@media (max-width: 1024px) {
+	#kidsMenuItem a{
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	}
+@media (min-width: 1025px) {
+	#kidsMenuItem a{
+		padding-bottom: 3px;
+	}
+	}
 #kidsMenuItem a:hover{
 	background-color:#ffb717;
 	color:#FFF;
@@ -243,7 +265,13 @@ a {
 #imprMenuItem a {
 	color:#009d4e;
 	font-size:19px;
+	letter-spacing: 0.2px
 }
+@media (max-width: 1024px) {
+	#imprMenuItem a {
+		padding-top: 16px;
+	}
+	}
 #imprMenuItem a:hover {
 	background-color:#009d4e;
 	color:#FFF;
@@ -251,6 +279,7 @@ a {
 #authMenuItem a {
 	color:#26cad3;
 	font-size:18px;
+	letter-spacing: 0.1px
 }
 #authMenuItem a:hover {
 	background-color:#26cad3;
@@ -260,6 +289,7 @@ a {
 	font-size:18px;
 	color:#0082cd;
 }
+
 #connMenuItem a:hover {
 	color:#FFF;
 	background-color:#0082cd;
@@ -267,8 +297,19 @@ a {
 #blogMenuItem a {
 	color:#b34ec6;
 	font-size:26px;
-	line-height: 0.8;
+	letter-spacing: 0.5px;
 }
+@media (max-width: 1024px) {
+	#blogMenuItem a {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	}
+@media (min-width: 1025px) {
+	#blogMenuItem a {
+		padding-bottom: 2px;
+	}
+	}
 #blogMenuItem a:hover {
 	background-color:#b34ec6;
 	color:#FFF;
@@ -284,8 +325,14 @@ a {
 #resoMenuItem a {
 	color:#ec6851;
 	font-size:15px;
-	/*line-height:30px;*/
+	letter-spacing: -0.3px;
 }
+@media (max-width: 1024px) {
+	#resoMenuItem a {
+		padding-top: 14px;
+		padding-bottom: 17px;
+	}
+	}
 #resoMenuItem a:hover {
 	background-color:#ec6851;
 	color:#FFF;
@@ -293,8 +340,14 @@ a {
 #cataMenuItem a {
 	color:#b08401;
 	font-size:16.5px;
-	/*line-height:30px;*/
+	letter-spacing: 0.2px;
 }
+@media (min-width: 1025px) {
+	#cataMenuItem a {
+		padding-top: 6px;
+		padding-bottom: 5px;
+	}
+	}
 #cataMenuItem a:hover {
 	background-color:#b08401;
 	color:#FFF;
@@ -304,6 +357,11 @@ a {
 	font-size:17.5px;
 	/*line-height:30px;*/
 }
+@media (max-width: 1024px) {
+	#compMenuItem a {
+		padding-bottom: 16px;
+	}
+	}
 #compMenuItem a:hover {
 	background-color:#afa198;
 	color:#FFF;
@@ -377,8 +435,20 @@ a {
 }
 /* Menu styles end here */
 
+#search-form input[type="text"] {
+	width: 95px;
+	height: 20px;
+	border: none;
+	box-shadow: none;
+	margin: 0 auto;
+	font-size: 11px;
+	padding: 3px;
+	background-color: #f1f1f1
+}
 
-
+#search-form input.bg {
+	background:url(../images/search-icon.gif) center no-repeat #F1F1F1 ;
+}
 
 /**********/
 /* SLIDER */
@@ -391,10 +461,6 @@ a {
 #slider .controls{
 margin: -85px auto 15px;
 text-align: center;
-}
-#slider .item{
-width: auto;
- height: auto;
 }
 
 #slider {
@@ -446,10 +512,17 @@ width: auto;
 	top: 0px; 
 	overflow: hidden;
 }
-#slider .item {
-	margin:0 auto
+#slider .item{
+	width: auto;
+	height: auto;
+ 	margin:0 auto;
 }
-
+#slider a {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
 #slider img{
 	width:100%;
 }
@@ -471,6 +544,8 @@ width: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
+	z-index: 4;
+	top: 0px;
 }
 @media (max-width:639px) {
 	#slider .item {
