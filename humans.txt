@@ -1,0 +1,9 @@
+Abrams Site Version: 2015
+
+Developers: 
+
+HTML and CSS: Adriana Villalobos (avillalobosfiatt@hotmail.com)
+
+Javascript: Alfredo Ávalos (aavalos@gmail.com)
+
+Wordpress: 
