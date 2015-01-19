@@ -59,6 +59,7 @@
                 // }
                 //window.setTimeout(ScaleSlider, 30);
                 var bodyWidth = $('#content').width();
+                if($(window).width()<1025)bodyWidth=bodyWidth-20;
                 if($(window).width()>=1025)bodyWidth=bodyWidth-25;
                 if($(window).width()>1280)bodyWidth=1120;
                 if (bodyWidth)
