@@ -198,7 +198,7 @@ a {
 	background-color:#FFF;
 	height:100%;
 	text-align:center;
-	top:60px;
+	padding-top:60px;
 	left:-160px;
 	width: 160px;
 	overflow:auto;
