@@ -198,11 +198,16 @@ a {
 	background-color:#FFF;
 	height:100%;
 	text-align:center;
-	padding-top:60px;
+	/*padding-top:60px;*/
 	left:-160px;
 	width: 160px;
 	overflow:auto;
 	z-index:4;
+}
+@media (min-width: 1025px) {
+	#baseMenu{
+	padding-top: 0px;
+}
 }
 #baseMenu ul {
 	list-style-type:none;
@@ -222,7 +227,6 @@ a {
 		padding:5px 30px 4px;
 		margin-bottom: 1px;
 }
-
 }
 #bookMenuItem a{
 	color:#fd6c35;
@@ -240,12 +244,6 @@ a {
 	line-height: 0.9;
 	letter-spacing: 0.6px;
 }
-/*@media (max-width: 1024px) {
-	#kidsMenuItem a{
-		padding-top: 7pt;
-		padding-bottom: 7pt;
-	}
-	}*/
 @media (min-width: 1025px) {
 	#kidsMenuItem a{
 		padding-bottom: 3px;
@@ -296,7 +294,6 @@ a {
 	font-size:18px;
 	color:#0082cd;
 }
-
 #connMenuItem a:hover {
 	color:#FFF;
 	background-color:#0082cd;
@@ -373,6 +370,269 @@ a {
 	background-color:#afa198;
 	color:#FFF;
 }
+/* samsungs media queries */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	.baseMenuItem a {
+		padding:7.5px 30px !important;
+		margin-bottom: 1px;
+		line-height: 0.8;
+}
+	#bookMenuItem a {
+		padding-top:8.8px !important;
+		padding-bottom:10.13px !important;
+		letter-spacing: 1.95px  !important;
+}
+	#kidsMenuItem a {		
+		padding-top:8.8px !important; 
+		padding-bottom:6px !important;
+		letter-spacing: 1.1px !important;
+}
+	#giftMenuItem a {
+		padding-top:10.8px !important;
+		padding-bottom:11.46px !important; 
+		letter-spacing: -0.19px !important;
+}
+	#imprMenuItem a {
+		padding-top:11.5px !important ;
+		padding-bottom:10.8px !important ;
+		letter-spacing: 0.4px  !important;
+}
+	#authMenuItem a {
+		padding-top:11.4px !important; 
+		padding-bottom:10.16px !important; 
+		letter-spacing: 0.15px  !important;
+}
+	#connMenuItem a {
+		padding-top:11.5px !important;
+		padding-bottom:10.82px !important;
+}
+	#blogMenuItem a {
+		padding-top:11.5px !important;
+		padding-bottom:8.8px !important;
+		letter-spacing: 0.9px !important;
+}
+	#evenMenuItem a {
+		padding-top:11.4px !important;
+		padding-bottom:10.83px !important;
+		letter-spacing: -0.1px !important;
+}
+	#resoMenuItem a {
+		padding-top:11.4px !important;
+		padding-bottom:9.5px !important;
+		letter-spacing: -0.8px !important;
+}
+	#cataMenuItem a {
+		padding-top:11.46px !important; 
+		padding-bottom:11.21px !important; 
+		letter-spacing: -1.3px !important;
+}
+	#compMenuItem a {
+		padding-top:10.8px !important;
+		padding-bottom:10.1px !important; 
+		letter-spacing: -0.9px !important;
+}
+}
+
+/* iphone5 media queries */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+	.baseMenuItem a {
+		padding-left:30px !important;
+		padding-right: 30px !important;
+		padding-top: 5px !important;
+		padding-bottom: 4.5px !important;
+		margin-bottom: 1px;
+		line-height: 1 !important;
+}
+	#bookMenuItem a {
+		padding-bottom:5px !important;
+		letter-spacing: 1.4px !important;
+
+}
+	#kidsMenuItem a {
+		padding-top: 2px !important;
+		padding-bottom:2px !important;
+		letter-spacing: 1.05px !important;
+}
+	#giftMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 6.5px !important;
+		letter-spacing: 0.15px !important;
+}
+	#imprMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: 0.4px !important;
+}
+	#authMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: 0.24px !important;
+}
+	#connMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 4px !important;
+		letter-spacing: 0.15px !important;
+}
+	#blogMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 9.5px !important;
+		letter-spacing: 0.95px !important;
+}
+	#evenMenuItem a {
+		padding-top: 1px !important;
+		padding-bottom: 5px !important;
+		letter-spacing: 0.2px !important;
+}
+	#resoMenuItem a {
+		padding-top: 5.5px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: -0.2px !important;
+}
+	#cataMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 4.5px !important;
+		letter-spacing: -0.27px !important;
+}
+	#compMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 6px !important;
+		letter-spacing: -0.27px !important;
+}
+}
+/* iphone6 media queries */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2) {
+	.baseMenuItem a {
+		padding-left:30px !important;
+		padding-right: 30px !important;
+		padding-top: 5px !important;
+		padding-bottom: 4.5px !important;
+		margin-bottom: 1px;
+		line-height: 1 !important;
+}
+	#bookMenuItem a {
+		padding-bottom:5px !important;
+		letter-spacing: 1.4px !important;
+
+}
+	#kidsMenuItem a {
+		padding-top: 2px !important;
+		padding-bottom:2px !important;
+		letter-spacing: 1.05px !important;
+}
+	#giftMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 6.5px !important;
+		letter-spacing: 0.15px !important;
+}
+	#imprMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: 0.4px !important;
+}
+	#authMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: 0.24px !important;
+}
+	#connMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 4px !important;
+		letter-spacing: 0.15px !important;
+}
+	#blogMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 9.5px !important;
+		letter-spacing: 0.95px !important;
+}
+	#evenMenuItem a {
+		padding-top: 1px !important;
+		padding-bottom: 5px !important;
+		letter-spacing: 0.2px !important;
+}
+	#resoMenuItem a {
+		padding-top: 5.5px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: -0.2px !important;
+}
+	#cataMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 4.5px !important;
+		letter-spacing: -0.27px !important;
+}
+	#compMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 6px !important;
+		letter-spacing: -0.27px !important;
+}
+}
+/* iphone6+ media queries */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3) {
+	.baseMenuItem a {
+		padding-left:30px !important;
+		padding-right: 30px !important;
+		padding-top: 5px !important;
+		padding-bottom: 4.5px !important;
+		margin-bottom: 1px;
+		line-height: 1 !important;
+}
+	#bookMenuItem a {
+		padding-bottom:5px !important;
+		letter-spacing: 1.4px !important;
+
+}
+	#kidsMenuItem a {
+		padding-top: 2px !important;
+		padding-bottom:2px !important;
+		letter-spacing: 1.05px !important;
+}
+	#giftMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 6.5px !important;
+		letter-spacing: 0.15px !important;
+}
+	#imprMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: 0.4px !important;
+}
+	#authMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: 0.24px !important;
+}
+	#connMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 4px !important;
+		letter-spacing: 0.15px !important;
+}
+	#blogMenuItem a {
+		padding-top: 6px !important;
+		padding-bottom: 9.5px !important;
+		letter-spacing: 0.95px !important;
+}
+	#evenMenuItem a {
+		padding-top: 1px !important;
+		padding-bottom: 5px !important;
+		letter-spacing: 0.2px !important;
+}
+	#resoMenuItem a {
+		padding-top: 5.5px !important;
+		padding-bottom: 5.5px !important;
+		letter-spacing: -0.2px !important;
+}
+	#cataMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 4.5px !important;
+		letter-spacing: -0.27px !important;
+}
+	#compMenuItem a {
+		padding-top: 6.5px !important;
+		padding-bottom: 6px !important;
+		letter-spacing: -0.27px !important;
+}
+}
+
+
 .search{
 	padding-bottom:40px;
 }
@@ -876,34 +1136,6 @@ margin-right: 1.5%;
 .three{
 	width: 97%;
 }
-/* Belong to home.css
-.textLeft{
-	width: auto;
-	overflow:hidden;
-	color:white;
-	padding:10px;
-}
-.imageRight{
-	height:237px;
-	float:right;
-}
-.imageLeft{
-	height:237px;
-	float:left;
-}
-.imageLeft img,.imageRight img{
-	height:237px;
-}
-.onHover{
-	display:none;
-}
-.seller{
-	text-align:center;
-}
-.seller img{	
-	height: 180px;
-	display: inline-block;
-}*/
 .grid h3{
 	margin: 0px;
 	text-transform: uppercase;
@@ -1115,7 +1347,7 @@ margin-right: 1.5%;
 @media (min-width: 1024px) {
 		.column.text,
 		.columns.text {
-			padding-left 22px
+			padding-left: 22px;
 		}
 }
 
@@ -1737,7 +1969,7 @@ ul.pagination {
 
     ul.pagination li a {
       display: block;
-      padding: 5px
+      padding: 5px;
       color: #FFF;
       font-weight: normal;
       line-height: inherit;
@@ -1758,8 +1990,7 @@ ul.pagination {
       color: white;
       font-weight: bold;
       cursor: default; }
-    ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-        ; }
+
   ul.pagination li {
     float: left;
     display: block; }

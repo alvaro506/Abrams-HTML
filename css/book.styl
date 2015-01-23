@@ -22,13 +22,32 @@
 				
 			@media (min-width: 1025px)
 				height 550px
+	
 
+.header .cover
+	background-color #EBE6E3
+	padding 30px 0
+	text-align center
+	min-height 500px
+	
+	img
+		width 85%
+		height auto
+		margin 0 auto
+		text-align center
 		
+		@media (min-width: 641px)
+			width 70%
+		
+		@media (min-width: 768px) and (max-width:1023px)
+			width 50%
+			
+		@media (min-width: 1025px)
+			max-width 370px
+			max-height 565px
 
 
 .columns.bookModules /* For no carousel template */
-	@media (min-width: 1025px)
-		padding-right 0
 
 	.medium-6
 		@media (min-width: 1025px)
@@ -112,8 +131,11 @@
 	position absolute
 	z-index 3
 	bottom 20px
-	right 34px
+	right 44px
 	color #FFF	
+	
+.header #buy 
+	right 24px
 	
 #buyOptions
 	width 100%
@@ -138,7 +160,7 @@
 
 	@media (min-width:1280px)
 		min-height 21.25em	
-		padding-top 100px
+		padding-top 80px
 		
 	.hardcover,
 	.ebook
@@ -183,20 +205,12 @@
 			padding-right 45px
 		@media (min-width 1280px)
 			padding-right 85px
-	
 
-	
-.header .cover
-	text-align center
-
-.header img 
-	margin 0 auto
-	text-align center
 			
 .header .bookMainInfo, /* For no carousel template */
 .header .bookDetails
-	margin-top 2.43em
-	min-height 350px
+	margin-top 25px
+	min-height 300px
 	padding-top 15px
 	padding-bottom 15px
 	
@@ -207,15 +221,18 @@
 		min-height 15em
 	
 	@media (min-width: 1025px)
-		padding-left 38px
+		padding-left 17px
 		
 	@media (min-width:1280px)
-		min-height 367px
+		min-height 307px
 		
 .header .bookDetails /* For no carousel template */
-	@media (min-width: 1025px) {
-		margin-top 2.3em
-	}
+	@media (min-width: 1025px) 
+		margin-top 25px
+	
+	ul li 
+		margin 9px 0
+		
 .bookDetails
 	color #FFF
 	padding 6px 15px
@@ -241,7 +258,7 @@
 	
 	ul li 
 		list-style-type none
-		margin 11px 0
+		margin 14px 0
 		font-size 1.5em
 		line-height 1
 		
@@ -261,12 +278,17 @@
 		strong
 			font-family 'Gotham Book'
 		
-.photos img
-	margin-bottom 1em
-	width 100%
+.photos 
+	.columns.end
+		@media (min-width: 1025px)
+			padding-right 0
 	
-	@media (max-width:640px)
-		padding 0
+	img
+		margin-bottom 1em
+		width 100%
+		
+		@media (max-width:640px)
+			padding 0
 	
 
 blockquote,
