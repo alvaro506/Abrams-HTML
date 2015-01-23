@@ -147,11 +147,12 @@ $(document).ready(function() {
 				//var clientWidth=$(window).width();
 				var clientWidth=document.body.clientWidth;
 				closeAll()
-				if(clientWidth>1024&&clientWidth<=1280){
+				/*if(clientWidth>1024&&clientWidth<=1280){
 					$('#content').stop(true, true).animate({'left' : "160px" });
 					$('#subMenu').stop(true, true).animate({'left' : "160px" });
 					$('#baseMenu').stop(true, true).animate({'left' : "0px" });
 				}else if(clientWidth>1280){
+				console.log('separated from left');
 					$('#content').stop(true, true).animate({'left' : "160px" });
 					$('#baseMenu').animate('left','50%').animate('left','-=640px');
 					$('#subMenu').animate('left','50%').animate('left','-=480px');
@@ -159,7 +160,7 @@ $(document).ready(function() {
 					$('#content').stop(true, true).animate({'left' : "0px" });
 					$('#baseMenu').stop(true, true).animate({'left' : "-160px" });
 					$('#subMenu').stop(true, true).animate({'left' : "0px" });
-				}
+				}*/
             }
 			function closeAll(){
 				if(baseMenuFlag){

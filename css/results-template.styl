@@ -214,6 +214,10 @@
 				left 0
 				right 0
 				
+				@media (max-width: 410px)
+					width 80%
+					max-width 280px
+				
 				@media (min-width: 960px)
 					max-height 472px
 				@media (min-width: 1024px)
@@ -249,23 +253,28 @@
 				vertical-align middle
 			
 				@media (min-width: 320px) and (max-width: 639px)
-					height 200px
+					// height 200px
 					display block
-					width 254px
+					// width 254px
 					margin 0 auto
+				/*@media (min-width 640px) and (max-width 959px)
+					display block
+					margin 0 auto
+					width 50%*/
 			
 			@media (max-width: 450px)
 				font-size 0.8em
 
 			@media (max-width 639px)
-				height 360px
+				// height 360px
 			
 			@media (min-width 641px)
 				height 340px
 
 			@media (min-width 768px)
 				height 384px
-				
+			/*@media (max-width 959px)
+				width 100% !important*/
 			@media (min-width 960px)
 				height 320px
 
@@ -314,7 +323,8 @@
 			height 100%
 			
 			@media (min-width:320px) and (max-width: 639px)
-				height 300px
+				width 100%
+
 			
 			@media (min-width: 768px)
 				min-height 294px
@@ -328,10 +338,9 @@
 				font-size 1em
 			
 				@media (min-width: 320px) and (max-width: 639px)
-					height 200px
 					display block
-					width 254px
-					margin 0 auto
+					width 100%
+					margin auto
 			
 			p 
 				text-transform none
@@ -369,6 +378,7 @@
 					
 					@media (min-width:320px) and (max-width: 639px)
 						width 33% !important
+						padding-bottom 20%
 
 					a 
 						position absolute
@@ -455,6 +465,8 @@
 			width 100%
 			
 #paginationWrapper
+	@media (max-width 1024px)
+		width: calc(100% - 1.6em) !important;
 	@media (min-width 1025px)
 		margin-right 25px
 		width calc(100% - 25px)
