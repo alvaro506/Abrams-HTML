@@ -198,7 +198,7 @@ a {
 	background-color:#FFF;
 	height:100%;
 	text-align:center;
-	/*padding-top:60px;*/
+	padding-top:60px;
 	left:-160px;
 	width: 160px;
 	overflow:auto;
@@ -419,7 +419,7 @@ a {
 	#resoMenuItem a {
 		padding-top:11.4px !important;
 		padding-bottom:9.5px !important;
-		letter-spacing: -0.8px !important;
+		letter-spacing: -1px !important;
 }
 	#cataMenuItem a {
 		padding-top:11.46px !important; 
